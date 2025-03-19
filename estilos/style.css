@@ -24,27 +24,29 @@ body {
 }
 
 .apresentacao {
+    
     padding: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 82px;
 }
 
-.imagem {
+.apresentacao-imagem {
     width: 30%;
     height: 30%;
-    border-radius: 150px;
+    border-radius: 500px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36;
+    font-size: 2.25rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -93,7 +95,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24;
+    font-size: 1.5rem;
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
 }
@@ -104,14 +106,14 @@ body {
     align-items: center ;
     gap: 40px;
 }
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     display: flex;
     justify-content: center;
     gap: 10px;
     width:280px;
     text-align: center;
     border-radius: 80px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -159,4 +161,20 @@ body {
     font-style: normal;
     color: var(--cor--terciaria);
     text-decoration: none;
+}
+
+@media(max-width:1200px) {
+    .cabecalho {
+       padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 8% 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
